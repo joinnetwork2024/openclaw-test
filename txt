@@ -1,0 +1,9 @@
+# 1. Redirect the API to OpenRouter
+export ANTHROPIC_BASE_URL="https://openrouter.ai/api/v1"
+
+# 2. Use your OpenRouter Key (Important: Note the two separate variables)
+export ANTHROPIC_AUTH_TOKEN="sk-or-v1-YOUR_OPENROUTER_KEY_HERE"
+export ANTHROPIC_API_KEY="" # Must be an empty string to force the redirect
+
+# 3. Pick your model (Example: Llama 3.3 70B Free or GPT-4o)
+export ANTHROPIC_DEFAULT_SONNET_MODEL="meta-llama/llama-3.3-70b-instruct:free"
